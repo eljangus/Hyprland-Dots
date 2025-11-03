@@ -1,0 +1,15 @@
+configuration{
+ font: "FiraCode Nerd Font 20";
+ modi: "dmenu";
+ fixed-num-lines: true;
+ show-icons: false;
+ icon-theme: "Papirus";
+ eh: 1;
+ dpi: 100;
+ display-drun: "";
+ display-run: "";
+ display-filebrowser: "󱧷";
+ location: 2;
+}
+
+@theme "~/.config/ThemeSwitcher/Waybars/WBT.rasi"

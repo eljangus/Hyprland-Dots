@@ -1,0 +1,32 @@
+{
+///////////////////////////
+ "layer": "top",
+ "position": "top",
+ "height": 0,
+ "width": 2540,
+ "spacing": 10,
+ "margin-top": 10,
+ "margin-bottom": 0,
+ "output": "DP-3",
+///////////////////////////
+ "modules-left": [
+ "custom/rofi",
+ "custom/theme",
+ "custom/bar",
+ "hyprland/workspaces",
+],
+ "modules-center": [
+  "mpris",
+],
+ "modules-right": [
+  "tray",
+  "group/volume",
+  "clock",
+  "custom/notifications",
+  "custom/powermenu",
+ ],
+///////////////////////////
+ "include": [
+  "/home/elias/.config/waybar/modules.jsonc",
+],
+}

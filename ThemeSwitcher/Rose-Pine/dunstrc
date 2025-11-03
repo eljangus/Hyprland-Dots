@@ -1,0 +1,36 @@
+[global]
+padding = 20
+width = 300
+font = JetBrainsMono Nerd Font 16
+frame_color = "#82aaff00"
+corner_radius = 20
+follow = mouse
+icon_theme = Papirus-Magenta
+icon_position = left
+enable_recursive_icon_lookup = true
+min_icon_size = 32
+max_icon_size = 128
+offset = (20, 20)
+notification_limit = 11
+
+[urgency_normal]
+    background = "#232136cc"
+    foreground = "#e0def4"
+    timeout = 10
+    override_pause_level = 30
+    # Icon for notifications with normal urgency
+    default_icon = dialog-information
+[urgency_low]
+    background = "#232136cc"
+    foreground = "#e0def4"
+    timeout = 10
+    override_pause_level = 30
+    # Icon for notifications with normal urgency
+    default_icon = dialog-information
+[urgency_critical]
+    background = "#232136cc"
+    foreground = "#e0def4"
+    timeout = 10
+    override_pause_level = 30
+    # Icon for notifications with normal urgency
+    default_icon = dialog-information

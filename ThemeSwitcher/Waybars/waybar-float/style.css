@@ -1,0 +1,270 @@
+@import "/home/elias/.config/colors/waybarcolors.css";    
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: jetBrainsMono Nerd Font Propo;
+    font-size: 20px;   
+    font-weight: bold;
+}
+window#waybar {
+ background: transparent;
+ opacity: 1.0;
+ margin: 0px;
+ padding: 0px;
+ background-image: none;
+ box-shadow: none;
+ border: none;
+}
+#custom-rofi {
+ background-color: @background;
+ font-size: 23px;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 20px;
+ color: @text;
+ border: 0px solid @border;
+}
+#custom-rofi:hover {
+ border-radius: 20px;
+ color: @textselect;
+}
+#clock {
+ background: @background;
+ font-size: 20px;
+ font-weight: bold;
+ border-radius: 20px;
+ padding-right: 15px;
+ padding-left: 15px; 
+ color: @text;
+ border: 0px solid @border;
+}
+#clock:hover {
+ border-radius: 20px;
+ color: @textselect;
+}
+#tray {
+ border-radius: 20px;
+ padding-left: 15px;
+ padding-right: 15px;
+ background-color: @background;
+ color: @text;
+ border: 0px solid @border;
+}
+#tray menu, menu {
+ background-color: @background;
+ color: @text;
+}
+#tray menu menuitem {
+ background-color: transparent;
+ color: @text;
+}
+#tray menu menuitem:hover {
+ background-color: transparent;
+ color: @textselect;
+}
+#workspaces {
+ margin: 0px;
+ font-size: 20px;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 20px;
+ background-color: @background;
+ border: 0px solid @border;
+ transition: all 0.3s ease;
+}
+#workspaces button:hover {
+ box-shadow: none;
+ text-shadow: none;
+ font-size: 20px;
+ min-width: 0px;
+ margin-top: 7px;
+ margin-bottom: 7px;
+ margin-left: 2px;
+ margin-right: 2px;
+ border: 0px;
+ background: @buttonselect;
+ border-radius: 20px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 9px;
+ padding-right: 9px;
+ color: @buttonselecttext;
+ transition: all 0.2s ease;
+}
+#workspaces:hover {
+ margin: 0px;
+ border: 0px;
+ font-size: 20px;
+ border-radius: 20px;
+}
+#workspaces button {
+ box-shadow: none;
+ text-shadow: none; 
+ font-size: 20px;
+ margin-top: 7px;
+ margin-bottom: 7px;
+ margin-left: 2px;
+ margin-right: 2px;
+ border: 0px;
+ min-width: 0px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 9px;
+ padding-right: 9px;
+ background-color: @button;
+ border-radius: 20px;
+ color: @text;
+ transition: all 0.2s ease;
+}
+#workspaces button.active{
+ margin-top: 7px;
+ margin-bottom: 7px;
+ margin-left: 2px;
+ margin-right: 2px;
+ font-size: 20px;
+ background: @selection;
+ color: @buttonselecttext;
+ padding-right: 30px;
+ padding-left: 30px;
+ border: 0px;
+ border-radius: 20px;
+ transition: all 0.5s ease;
+}
+#network {
+ border-radius: 20px;
+ padding: 10px;
+ padding-right: 15px;
+ padding-left: 15px;
+ background-color: @background;
+ color: @text;
+ border: 0px solid @border;
+}
+#network:hover {
+ border-radius: 20px;
+ color: @textselect;
+}
+#pulseaudio {
+ background: transparent;
+ border-radius: 20px;
+ padding-right: 5px;
+ padding-left: 15px;
+ color: @text;
+ border: 0px solid @background;
+}
+#pulseaudio:hover {
+ border-radius: 20px;
+ color: @textselect;
+}
+#pulseaudio-slider {
+ background: transparent;
+ border-radius: 20px;
+ padding-right: 21px;
+ padding-left: 5px;
+ color: @text;
+ border: 0px solid @background;
+}
+#pulseaudio-slider slider {
+ background: @text;
+ min-height: 0px;
+ min-width: 0px;
+ margin: -6px;
+ opacity: 0;
+ box-shadow: none;
+ border: 0px solid @background;
+}
+#pulseaudio-slider trough {
+ background: @background;
+ min-width: 70px;
+ min-height: 4px;
+ border-radius: 20px;
+ border: 0px solid @background;
+}
+#pulseaudio-slider highlight {
+ background: @textselect;
+ border-radius: 20px;
+ color: @textselect;
+}
+#volume {
+ background: @background;
+ border-radius: 20px;
+}
+#mpris {
+ background: @background;
+ font-size: 20px;
+ font-weight: bold;
+ border-radius: 20px;
+ padding: 10px;
+ padding-left: 15px;
+ padding-right: 15px;
+ color: @text;
+ border: 0px solid @border;
+}
+#mpris:hover {
+ border-radius: 20px;
+ color: @textselect;
+}
+#custom-powermenu {
+ border-radius: 20px;
+ padding: 10px;
+ padding-right: 15px;
+ padding-left: 15px;
+ background-color: @background;
+ color: @text;
+ border: 0px solid @border;
+}
+#custom-powermenu:hover {
+ border-radius: 20px;
+ color: @textselect;
+}
+#custom-theme {
+ background-color: @background;
+ font-size: 23px;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 20px;
+ color: @text;
+ border: 0px solid @border;
+}
+#custom-bar {
+ background-color: @background;
+ font-size: 23px;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 20px;
+ color: @text;
+ border: 0px solid @border;
+}
+#custom-theme:hover {
+ border-radius: 20px;
+ color: @textselect;
+}
+#custom-bar:hover {
+ border-radius: 20px;
+ color: @textselect;
+}
+#custom-notifications {
+ background-color: @background;
+ font-size: 23px;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 20px;
+ color: @text;
+ border: 0px solid @border; 
+}
+#custom-notifications:hover {
+ color: @textselect;
+ border-radius: 20px;
+}
+tooltip {
+ background-color: @background;
+ padding: 5px; 
+ color: @text;
+ border-radius: 20px;
+}
+tooltip label {
+ padding: 5px;
+ border-radius: 20px;
+ font-weight: bold;
+ color: @text;
+ text-shadow: none;
+}
+

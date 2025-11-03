@@ -1,0 +1,18 @@
+* {
+    border: #81A1C100;
+    background: #282828cc;
+    textcolor: #ebdbb2;
+    accent1: #cc241d;
+    accent2: #98971a;
+    accent3: #d79921;
+    accent4: #458588;
+    selection: #D7992155;
+    selectionborder: #D79921;
+    myhigh: bold #98971A;
+    searchcolor: #ebdbb299;
+    powermenuselect: #98971A;
+    nul: #00000000;
+    borderradius: 20px;
+
+    borderradiuselement: 9px;
+}
