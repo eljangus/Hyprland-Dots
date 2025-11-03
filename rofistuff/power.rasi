@@ -1,0 +1,12 @@
+configuration{
+ font: "JetBrainsMono Nerd Font Propo 50";
+ modi: "dmenu";
+ fixed-num-lines: true;
+ show-icons: false;
+ icon-theme: "Papirus";
+ eh: 1;
+ dpi: 100;
+ location: 3;
+}
+
+@theme "~/.config/rofistuff/pm.rasi"

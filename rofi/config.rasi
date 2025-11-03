@@ -1,0 +1,16 @@
+configuration{
+ font: "FiraCode Nerd Font 20";
+ modi: "drun,run,filebrowser";
+ fixed-num-lines: true;
+ show-icons: true;
+ icon-theme: "Papirus";
+ eh: 1;
+ dpi: 100;
+ drun-display-format: "{name}";
+ display-drun: "";
+ display-run: "";
+ display-filebrowser: "󱧷";
+ location: 1;
+}
+
+@theme "~/.config/rofi/theme.rasi"

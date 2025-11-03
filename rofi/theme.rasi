@@ -1,0 +1,168 @@
+@import "~/.config/colors/roficolors.rasi"
+
+window {
+  width: 600px;
+  padding: 0;
+  border: 3px;
+  border-color: var(border);
+  border-radius: var(borderradius);
+  transparency: "real";
+  background-color: #00000000;
+  x-offset: 20px;
+  y-offset: 20px;
+}
+
+textbox {
+  enabled: false;
+  padding: 12 30 12 19;
+  margin: 0 10 0 0;
+  str: "";
+  expand: false;
+  text-color: var(accent1);
+  background-color: var(background);
+  border: 2px;
+  border-radius: 20;
+  border-color: var(border);
+}
+
+entry {
+  placeholder: "Search...";
+  placeholder-color: var(searchcolor);
+  text-color: var(textcolor);
+  border: 0;
+  border-color: var(border);
+  padding: 12;
+  border-radius: 20;
+  background-color: var(nul);
+}
+
+listview {
+  lines: 16;
+  margin: 0 0 0 0;
+  padding: 0 46 40 40;
+  columns: 1;
+  background-color: var(background);
+  scrollbar: false;
+  cycle: false;
+  border: 0;
+
+  border-color: var(border);
+}
+
+mainbox {
+  background-color: #00000000;
+  spacing: 0; 
+  padding: 0;
+  border-radius: var(borderradius);
+  children: [ inputbar, listview ];
+}
+
+inputbar {
+  padding: 46 40 10 40;
+  background-color: var(background);
+  children: [ entry ];
+  border: 0;
+  border-color: var(border);
+}
+
+prompt{
+ enabled: true;
+ padding: 12 28 12 19;
+ margin: 0 30 0 0;
+ text-color: var(textcolor);
+ border: 2;
+ border-color: var(border);
+ border-radius: 20;
+ background-color: var(background);
+}
+
+element{
+ padding: 10 20 10 20;
+ margin: 2 0 2 0;
+ border-radius: 9;
+ border: 0;
+}
+
+element normal.normal{
+ background-color: var(nul);
+ text-color: var(textcolor);
+}
+
+element normal.active{
+ background-color: var(nul);
+ text-color: var(textcolor);
+}
+
+element normal.urgent{
+ background-color: var(nul);
+ text-color: var(textcolor);
+}
+
+element alternate.active{
+ background-color: var(nul);
+ text-color: var(textcolor);
+}
+
+element alternate.normal{
+ background-color: var(nul);
+ text-color: var(textcolor);
+}
+
+element alternate.urgent{
+ background-color: var(nul);
+ text-color: var(textcolor);
+}
+
+element-text{
+ background-color: #00000000;
+ text-color: inherit;
+ padding: 0;
+ vertical-align: 0.5;
+ highlight: var(myhigh);
+}
+
+element selected.normal {
+ background-color: var(selection);
+ text-color: var(textcolor);
+ border: 2;
+ border-color: var(selectionborder);
+}
+
+element selected.urgent {
+ background-color: var(selection);
+ text-color: var(textcolor);
+}
+
+element selected.active {
+ background-color: var(selection);
+ text-color: var(textcolor);
+}
+
+element-icon{
+ size: 48;
+ background-color: var(nul);
+ text-color: inherit;
+}
+
+mode-switcher{
+ padding: 0;
+ background-color: #00000000;
+  margin: 0 20 0 20;
+ children: [ button ];
+}
+
+button{
+ padding: 0 26 0 21;
+ margin: 0 10 0 10;
+ border: 2;
+ border-radius: 20;
+ border-color: var(border);
+ background-color: var(background);
+ text-color: var(textcolor);
+}
+
+
+button selected.normal {
+ background-color: var(background);
+ text-color: var(accent2);
+}
